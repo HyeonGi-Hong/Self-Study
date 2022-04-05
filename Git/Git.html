@@ -39,8 +39,47 @@
           ? $git remote add origin 원격저장소주소
           * - origin이란 별칭으로 원격 저장소를 연결.
 
-          ? $git push origin master
+          ? $git push origin 브랜치이름
           * - origin이란 별칭의 원격 저장소로 버전 내역 전송
+
+          ? $git branch signin
+          * - 원하는 이름(sighin)의 브랜치를 생성
+
+          ? $git checkout signin
+          * - 생성된 브랜치(signin)로 이동
+
+          ? $dir
+          * - 현재 경로에 있는 폴더 목록.
+
+          ? $cd (change directory)
+          * - $cd + '파일이름' -> tab으로 선택후 enter
+
+          ? $cd ..
+          * - 직전 파일경로로 이동
+
+          ? $git clone 원격저장소주소
+          * - 현재 경로에 해당저장소 자체를 복제해서 생성.
+
+          ? $(오픈할 파일의 경로를 설정후) code .
+          * - 새로운 VScode창으로 해당 파일경로 오픈
+          
+          ? $(오픈할 파일의 경로를 설정후) code . -r
+          * - 현재 VScode창으로 해당 파일경로 오픈
+
+          ? $git reset --hard HEAD~1
+          * - 한 개의 버전 앞으로 이동
+          
+          ? $git reset --hard ORIG_HEAD
+          * - reset 전으로 원상복귀
+
+          ? $git checkout -b 원하는 브랜치이름
+          * - 새로운 브랜치 생성과 동시에 해당 브랜치로 이동
+
+          ! 새로운 환경에서 시작하기
+          ? 복제할 코드 열기(dir, cd, clone, code . -r 등 이용). 
+          ? master 브랜치만 복제 - why? 내가 관리하지 않는 브랜치를 가져올 필요가 없기때문에. 
+          ? 다른 브랜치도 가져오고 싶다면 '$git branch -r' 입력하여 브랜치목록 열어주고 '$git checkout -t origin/브랜치이름'으로 브랜치 추가
+          ? 브랜치를 지우고 싶다면 삭제할 브랜치가 아닌 다른 브랜치로 이동 후 '$git branch -d 삭제할 브랜치이름'
       -->
 </body>
 </html>
