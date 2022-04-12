@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>click</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script>
+          $(document).ready(function(){
+               //  a기능
+               $('button').click(function(){
+                    alert('경고창');
+               });
+               $('button').click(test)
+               function test(){
+                    alert('경고창');
+               }
+               //button 태그가 클릭이 되면 경고창
+               $('div').click(function(){
+                    console.log($('div').css('background-color', 'red'));
+               });
+          });
+          //body 태그가 준비가 되면 a기능을 실행
+     </script>
+     <style>
+          div{
+               width: 300px; height: 300px; background-color: aquamarine;
+          }
+     </style>
+</head>
+<body>
+     <button>경고창</button>
+     <div>
+          배경색
+     </div>
+</body>
+</html>
